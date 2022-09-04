@@ -3,12 +3,12 @@
 //78 -> третьей цифры нет
 //32679 -> 6
 
-Console.WriteLine("Ввечите число");
+Console.WriteLine("Введите число");
 int a = int.Parse(Console.ReadLine());
 int b = a/100;
 if(b == 0)
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine($"{a} -> Третьей цифры нет");
 }
 else
 {

@@ -6,7 +6,7 @@
 string[] array = {"от одного до семи", "нет", "нет", "нет", "нет", "нет", "да", "да"};
 Console.WriteLine("Введите число от одного до семи");
 int i = int.Parse(Console.ReadLine());
-if(i < 1 || i > array.Length)
+if(i < 1 || i > array.Length-1)
 {
     Console. WriteLine("От одного до семи. Попробуйте ещё раз.");
 }
@@ -18,7 +18,7 @@ else
 
 Console.WriteLine("Введите число от одного до семи");
 int a = int.Parse(Console.ReadLine());
-if(a < 1 || a > 8)
+if(a < 1 || a > 7)
 {
     Console. WriteLine("От одного до семи.");
 }
