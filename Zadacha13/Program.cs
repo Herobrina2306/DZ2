@@ -5,13 +5,18 @@
 
 Console.WriteLine("Введите число");
 int a = int.Parse(Console.ReadLine());
-int b = a/100;
-if(b == 0)
+if(a < 100)
 {
-    Console.WriteLine($"{a} -> Третьей цифры нет");
+
+        Console.WriteLine($"{a} -> Третьей цифры нет");
 }
 else
 {
+    int b = a;
+    while(b > 1000)
+    {
+        b = b/10;
+    }
     int c = b%10;
     Console.WriteLine($"{a} -> {c}");
 }
